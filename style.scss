@@ -8,7 +8,6 @@ body {
     
 }
 .container {
-    border:solid black;
     position: absolute;
     width: 23.4375rem;
     height: 326.1875rem;
@@ -24,7 +23,7 @@ header {
     background-position: bottom;
     color: #F1F1F1;
 }
-.nav_img {
+.nav_logo {
     position:absolute;
     width: 7.7275rem;
     height: 1.5rem; 
@@ -296,29 +295,167 @@ h1 {
     color: #24554A;
 }
 aside {
-    position: absolute;
+    position: relative;
     width: 20.4375rem;
     height: 69.25rem;
     left: 1.5rem;
-    top: 206.25rem;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;   
 }
-figure {
+h3 {
+    position:absolute;
+    top: 206.25rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: #A7AAAD;
+    text-transform: uppercase;
+}
+.aside_img1 {
+    position: absolute;
+    top: 211.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 3.125rem;
+}
+.aside_p1 {
+    position: absolute;
+    top: 218rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #5B636D;
+}
+.aside_client1 {
+    position: absolute;
+    top: 226rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.128571px;
+    color: #24303E;
+}
+.aside_job1 {
+    position: absolute;
+    top: 227.9375rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
+}
+.aside_img2 {
+    position: absolute;
+    top: 233.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 3.125rem;
+}
+.aside_p2 {
+    position: absolute;
+    top: 240rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: -0.008rem;
+    color: #5B636D;
+}
+.aside_client2 {
+    position: absolute;
+    top: 250rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-align: center;
+    letter-spacing: -0.008rem;
+    color: #24303E;
+}
+.aside_job2 {
+    position: absolute;
+    top: 251.9375rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
+}
+.aside_img3 {
+    position: absolute;
+    top: 257.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 3.125rem;
+}
+.aside_p3 {
+    position: absolute;
+    top: 264rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: -0.008rem;
+    color: #5B636D;
+}
+.aside_client3 {
+    position: absolute;
+    top: 272rem;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    text-align: center;
+    letter-spacing: -0.008rem;
+    color: #24303E;
+}
+.aside_job3 {
+    position: absolute;
+    top: 273.9375rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #A7AAAD;
+}
+.figures {
     position: absolute;
     width: 23.4375rem;
     height: 23.4375rem;
-    left: 0rem;
     top: 280.875rem;
     display:flex;
     justify-content: flex-start;
     flex-flow: row wrap;
 }
 .figure_img {
-    width: 11.75rem;
-    height: 11.75rem;
+    position: relative;
+    width: 11.718775rem;
+    height: 11.718775rem;
+    padding: 0rem;
     object-fit: cover;
 }
 footer {
@@ -328,4 +465,66 @@ footer {
     left: 0rem;
     top: 304.3125rem;
     background: #90D4C6;
+}
+.footer_logo {
+    position:absolute;
+    width: 10.625rem;
+    height: 2.0625rem; 
+    margin-top: 4rem;
+    margin-left: 6rem;
+}
+.footer_nav {
+    position:absolute;
+    height: 1.5625rem;
+    margin-top: 8.5625rem;
+    margin-left: 2.4375rem;
+    margin-right: 2.375rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.128571px;
+    color: #458D7E;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer_about {
+    width: 3rem;
+    height: 1.5625rem;
+    margin-right: 3.5rem;
+}
+.footer_services {
+    width: 4.3125rem;
+    height: 1.5625rem;
+    margin-right: 3.5rem;
+}
+.footer_projects {
+    width: 4.125rem;
+    height: 1.5625rem;
+}
+.footer_icons {
+    position: absolute;
+    width: 10.25rem;
+    height: 1.25rem;
+    margin-top: 15.625rem;
+    margin-left: 6.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_fb {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.footer_ig {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.footer_tw {
+    width: 1.25rem;
+    height: 1.0313rem;
+}
+.footer_pt {
+    width: 1.25rem;
+    height: 20px;
 }
