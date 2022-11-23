@@ -1,12 +1,24 @@
+@charset "UTF-8";
 body {
   position: relative;
-  width: 59.7075rem;
+  width: 90rem;
   height: 326.1875rem;
   font-family: "Fraunces";
   font-size: 1.125rem;
   margin: 0%;
 }
 
+/*Tentative responsive non concluante */
+@media screen and (min-width: 90rem) {
+  body {
+    position: relative;
+    width: 90rem;
+    height: 21.875rem;
+    font-family: "Fraunces";
+    font-size: 1.125rem;
+    margin: 0%;
+  }
+}
 .container {
   position: absolute;
   width: 23.4375rem;
@@ -14,8 +26,16 @@ body {
   display: block;
 }
 
+@media screen and (min-width: 90rem) {
+  .container {
+    position: absolute;
+    width: 90rem;
+    height: 260.875rem;
+    display: block;
+  }
+}
 header {
-  position: absolute;
+  position: relative;
   width: 23.4375rem;
   height: 33.625rem;
   background-image: url("./assets/image-header.jpg");
@@ -25,6 +45,26 @@ header {
   color: #F1F1F1;
 }
 
+@media screen and (min-width: 90rem) {
+  header {
+    position: relative;
+    width: 90rem;
+    height: 50rem;
+    background-image: url("./assets/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: 90rem 50rem;
+    color: #F1F1F1;
+  }
+}
+@media screen and (min-width: 90rem) {
+  nav {
+    font-family: "Barlow";
+    margin-right: 2.5rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
 .nav_logo {
   position: absolute;
   width: 7.7275rem;
@@ -33,6 +73,15 @@ header {
   margin-left: 1.5rem;
 }
 
+@media screen and (min-width: 90rem) {
+  .nav_logo {
+    position: absolute;
+    width: 10.625rem;
+    height: 2.0625rem;
+    margin-top: 2.875rem;
+  }
+}
+/* Version active non réalisée */
 .nav_shape {
   position: absolute;
   width: 1.5rem;
@@ -62,85 +111,115 @@ header {
   height: 0.125rem;
 }
 
+@media screen and (min-width: 1440px) {
+  .nav_shape {
+    display: none;
+  }
+}
 .nav_About {
   display: none;
-  padding-right: 2.9375rem;
-  padding-left: 44.6875rem;
-  margin-top: 3.125rem;
-  width: 3rem;
-  height: 1.5625rem;
-  left: 65.46%;
-  right: 30.99%;
-  top: calc(50% - 0.78125rem + 0.0313rem);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.5625rem;
-  letter-spacing: -0.008rem;
 }
 
 .nav_Services {
   display: none;
-  padding-right: 2.9375rem;
-  margin-top: 3.125rem;
-  width: 4.5rem;
-  height: 1.5625rem;
-  left: 72.49%;
-  right: 22.19%;
-  top: calc(50% - 0.78125rem + 0.0313rem);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.5625rem;
-  letter-spacing: -0.008rem;
 }
 
 .nav_Projects {
   display: none;
-  padding-right: 2.9375rem;
-  margin-top: 3.125rem;
-  width: 4.125rem;
-  height: 1.5625rem;
-  left: 81.29%;
-  right: 13.83%;
-  top: calc(50% - 0.78125rem + 0.0313rem);
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.125rem;
-  line-height: 1.5625rem;
-  letter-spacing: -0.008rem;
 }
 
+/* 4 éléments n'apparaissent pas */
+@media screen and (min-width: 90rem) {
+  .nav_About {
+    padding-right: 2.9375rem;
+    padding-left: 44.6875rem;
+    margin-top: 3.125rem;
+    width: 3rem;
+    height: 1.5625rem;
+    left: 65.46%;
+    right: 30.99%;
+    top: calc(50% - 0.78125rem + 0.0313rem);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.008rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .nav_Services {
+    padding-right: 2.9375rem;
+    margin-top: 3.125rem;
+    width: 4.5rem;
+    height: 1.5625rem;
+    left: 72.49%;
+    right: 22.19%;
+    top: calc(50% - 0.78125rem + 0.0313rem);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.008rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .nav_Projects {
+    padding-right: 2.9375rem;
+    margin-top: 3.125rem;
+    width: 4.125rem;
+    height: 1.5625rem;
+    left: 81.29%;
+    right: 13.83%;
+    top: calc(50% - 0.78125rem + 0.0313rem);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.008rem;
+  }
+}
 button {
   display: none;
-  padding-left: 2rem;
-  padding-right: 1.875rem;
-  padding-top: 1rem;
-  padding-bottom: 0.9375rem;
-  margin-top: 2.125rem;
-  width: 8.75rem;
-  height: 3.5rem;
-  left: 22.86%;
-  right: 21.43%;
-  border-radius: 1.75rem;
-  border: none;
-  top: calc(50% - 0.78125rem + 0.0313rem);
-  font-family: "Fraunces 9pt Soft";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.9375rem;
-  line-height: 1.5625rem;
-  letter-spacing: -0.0067rem;
-  text-transform: uppercase;
-  color: #24303E;
+}
+
+@media screen and (min-width: 90rem) {
+  button {
+    padding-left: 2rem;
+    padding-right: 1.875rem;
+    padding-top: 1rem;
+    padding-bottom: 0.9375rem;
+    margin-top: 2.125rem;
+    width: 8.75rem;
+    height: 3.5rem;
+    left: 22.86%;
+    right: 21.43%;
+    border-radius: 1.75rem;
+    border: none;
+    top: calc(50% - 0.78125rem + 0.0313rem);
+    font-family: "Fraunces 9pt Soft";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    letter-spacing: -0.0067rem;
+    text-transform: uppercase;
+    color: #24303E;
+  }
+}
+/* Flèche n'apparaît pas */
+.header_arrow {
+  position: absolute;
+  width: 0.0625rem;
+  height: 6.25rem;
+  top: 25.82rem;
 }
 
 h1 {
+  position: absolute;
   width: 20.4375rem;
   height: 6.125rem;
   margin-left: 1.5rem;
   margin-top: 9rem;
-  font-family: "Fraunces 9pt Soft";
   font-style: normal;
   font-weight: 900;
   font-size: 2.5rem;
@@ -150,6 +229,24 @@ h1 {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 90rem) {
+  h1 {
+    position: absolute;
+    width: 46.875rem;
+    height: 4.3125rem;
+    margin-left: 21.5313rem;
+    margin-top: 12.1875rem;
+    font-family: "Fraunces 9pt Soft";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 4.3125rem;
+    text-align: center;
+    letter-spacing: 0.5469rem;
+    text-transform: uppercase;
+  }
+}
+/* À partir d'ici, plus de responsive */
 .main_img1 {
   position: absolute;
   width: 23.4375rem;
@@ -199,6 +296,15 @@ h1 {
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
   color: #24303E;
+}
+
+.section1_rect {
+  width: 8.5625rem;
+  height: 0.625rem;
+  background-color: #FAD400;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 28px;
 }
 
 .main_img2 {
@@ -252,6 +358,15 @@ h1 {
   color: #24303E;
 }
 
+.section2_rect {
+  width: 8.5625rem;
+  height: 0.625rem;
+  background-color: #FE7766;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 28px;
+}
+
 .section3 {
   position: absolute;
   width: 23.4375rem;
@@ -268,10 +383,10 @@ h1 {
   margin-top: 24.875rem;
   font-style: normal;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 1.75rem;
+  line-height: 2.1875rem;
   text-align: center;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   color: #24554A;
 }
 
@@ -279,10 +394,10 @@ h1 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: 1.6875rem;
   text-align: center;
-  letter-spacing: -0.114286px;
+  letter-spacing: -0.0071rem;
   color: #24554A;
 }
 
@@ -302,10 +417,10 @@ h1 {
   margin-top: 24.875rem;
   font-style: normal;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 1.75rem;
+  line-height: 2.1875rem;
   text-align: center;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   color: #24554A;
 }
 
@@ -315,10 +430,10 @@ h1 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 27px;
+  font-size: 1rem;
+  line-height: 1.6875rem;
   text-align: center;
-  letter-spacing: -0.114286px;
+  letter-spacing: -0.0071rem;
   color: #24554A;
 }
 
@@ -326,6 +441,7 @@ aside {
   position: relative;
   width: 20.4375rem;
   height: 69.25rem;
+  top: -34rem;
   left: 1.5rem;
   display: flex;
   justify-content: center;
@@ -338,10 +454,10 @@ h3 {
   top: 206.25rem;
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 0.25rem;
   color: #A7AAAD;
   text-transform: uppercase;
 }
@@ -360,10 +476,10 @@ h3 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 2rem;
   text-align: center;
-  letter-spacing: -0.128571px;
+  letter-spacing: -0.008rem;
   color: #5B636D;
 }
 
@@ -372,10 +488,10 @@ h3 {
   top: 226rem;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-align: center;
-  letter-spacing: -0.128571px;
+  letter-spacing: -0.008rem;
   color: #24303E;
 }
 
@@ -385,10 +501,10 @@ h3 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
   text-align: center;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.0063rem;
   color: #A7AAAD;
 }
 
@@ -431,10 +547,10 @@ h3 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
   text-align: center;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.0063rem;
   color: #A7AAAD;
 }
 
@@ -477,10 +593,10 @@ h3 {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 0.875rem;
+  line-height: 1.5625rem;
   text-align: center;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.0063rem;
   color: #A7AAAD;
 }
 
@@ -512,6 +628,7 @@ footer {
   background: #90D4C6;
 }
 
+/*Couleur de logo non modifiée (malgré tentatives)*/
 .footer_logo {
   position: absolute;
   width: 10.625rem;
@@ -529,9 +646,9 @@ footer {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: -0.128571px;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  letter-spacing: -0.008rem;
   color: #458D7E;
   display: flex;
   justify-content: flex-start;
@@ -581,5 +698,5 @@ footer {
 
 .footer_pt {
   width: 1.25rem;
-  height: 20px;
+  height: 1.25rem;
 }/*# sourceMappingURL=style.css.map */
